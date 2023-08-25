@@ -340,7 +340,7 @@ public class WechatWorkIdentityProvider
         if (error != null) {
           logger.error(error + " for broker login " + getConfig().getProviderId());
           if (error.equals(ACCESS_DENIED)) {
-            return callback.cancelled(new IdentityProviderModel());
+            return callback.cancelled(getConfig());
           } else if (error.equals(OAuthErrorException.LOGIN_REQUIRED)
               || error.equals(OAuthErrorException.INTERACTION_REQUIRED)) {
             return callback.error(error);
