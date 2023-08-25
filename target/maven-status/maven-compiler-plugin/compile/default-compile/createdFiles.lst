@@ -1,0 +1,5 @@
+org\keycloak\social\wechat\WechatWorkProviderConfig.class
+org\keycloak\social\wechat\WechatWorkUserAttributeMapper.class
+org\keycloak\social\wechat\WechatWorkIdentityProvider$Endpoint.class
+org\keycloak\social\wechat\WechatWorkIdentityProviderFactory.class
+org\keycloak\social\wechat\WechatWorkIdentityProvider.class
