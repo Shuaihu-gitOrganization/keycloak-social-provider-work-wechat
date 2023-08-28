@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb273b8f-847e-4cff-ba17-af76595c82db" name="更改" comment="" />
+    <list default="true" id="eb273b8f-847e-4cff-ba17-af76595c82db" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/keycloak/social/wechat/WechatWorkIdentityProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keycloak/social/wechat/WechatWorkIdentityProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jboss-deployment-structure.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +15,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2UTBSLuyYfnSBCaOg8bK4yL568n" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,9 +38,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Projection/keycloak-social-provider-work-wechat",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projection\keycloak-social-provider-work-wechat" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -33,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692953695137</updated>
-      <workItem from="1692953696321" duration="3000" />
+      <workItem from="1692953696321" duration="2038000" />
     </task>
     <servers />
   </component>
