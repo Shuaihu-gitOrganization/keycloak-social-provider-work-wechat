@@ -31,6 +31,7 @@ import org.keycloak.OAuth2Constants;
 import org.keycloak.OAuthErrorException;
 import org.keycloak.broker.oidc.AbstractOAuth2IdentityProvider;
 import org.keycloak.broker.oidc.mappers.AbstractJsonUserAttributeMapper;
+import org.keycloak.broker.provider.AbstractIdentityProvider;
 import org.keycloak.broker.provider.AuthenticationRequest;
 import org.keycloak.broker.provider.BrokeredIdentityContext;
 import org.keycloak.broker.provider.IdentityBrokerException;
@@ -159,8 +160,9 @@ public class WechatWorkIdentityProvider
 
   public WechatWorkIdentityProvider(KeycloakSession session, WechatWorkProviderConfig config) {
     super(session, config);
+    new Endpoint(session);
     config.setAuthorizationUrl(AUTH_URL);
-    config.setAgentId("1000002");
+    config.setAgentId("1000003");
     config.setQrcodeAuthorizationUrl(QRCODE_AUTH_URL);
     config.setTokenUrl(TOKEN_URL);
   }
@@ -318,6 +320,10 @@ public class WechatWorkIdentityProvider
       this.callback = callback;
       this.realm = realm;
       this.event = event;
+    }
+
+    public Endpoint(KeycloakSession session) {
+      this.session=session;
     }
 
     @GET

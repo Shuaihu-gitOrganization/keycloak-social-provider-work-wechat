@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb273b8f-847e-4cff-ba17-af76595c82db" name="更改" comment="">
+    <list default="true" id="eb273b8f-847e-4cff-ba17-af76595c82db" name="更改" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/keycloak/social/wechat/WechatWorkIdentityProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keycloak/social/wechat/WechatWorkIdentityProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jboss-deployment-structure.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/services/org.keycloak.broker.provider.IdentityProviderMapper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/services/org.keycloak.broker.social.SocialIdentityProviderFactory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jboss-deployment-structure.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkIdentityProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkIdentityProviderFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkProviderConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkUserAttributeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/keycloak-services-social-wechat-work-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/keycloak-services-social-wechat-work.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,21 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Projection/keycloak-social-provider-work-wechat",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projection/keycloak-social-provider-work-wechat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projection\keycloak-social-provider-work-wechat" />
@@ -61,10 +76,28 @@
       <option name="presentableId" value="Default" />
       <updated>1692953695137</updated>
       <workItem from="1692953696321" duration="2038000" />
+      <workItem from="1693185737967" duration="1100000" />
+      <workItem from="1693296781507" duration="358000" />
+      <workItem from="1693297189742" duration="4616000" />
+      <workItem from="1693357695029" duration="108000" />
+      <workItem from="1693357872024" duration="1206000" />
     </task>
+    <task id="LOCAL-00001" summary="fix">
+      <option name="closed" value="true" />
+      <created>1693185811514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693185811514</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
