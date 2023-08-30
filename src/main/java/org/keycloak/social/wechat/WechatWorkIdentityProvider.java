@@ -160,9 +160,9 @@ public class WechatWorkIdentityProvider
 
   public WechatWorkIdentityProvider(KeycloakSession session, WechatWorkProviderConfig config) {
     super(session, config);
-    new Endpoint(session);
+    new Endpoint(session);//内部类接收keycloak session
     config.setAuthorizationUrl(AUTH_URL);
-    config.setAgentId("1000003");
+    config.setAgentId("1000003");//微信应用id
     config.setQrcodeAuthorizationUrl(QRCODE_AUTH_URL);
     config.setTokenUrl(TOKEN_URL);
   }

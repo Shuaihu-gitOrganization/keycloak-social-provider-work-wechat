@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb273b8f-847e-4cff-ba17-af76595c82db" name="更改" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eb273b8f-847e-4cff-ba17-af76595c82db" name="更改" comment="fix 修复内部类调用不了外部keycloak seeion问题">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/keycloak/social/wechat/WechatWorkIdentityProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keycloak/social/wechat/WechatWorkIdentityProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/services/org.keycloak.broker.provider.IdentityProviderMapper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/services/org.keycloak.broker.social.SocialIdentityProviderFactory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jboss-deployment-structure.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkIdentityProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkIdentityProviderFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkProviderConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keycloak/social/wechat/WechatWorkUserAttributeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/keycloak-services-social-wechat-work-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/keycloak-services-social-wechat-work.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +67,7 @@
       <workItem from="1693296781507" duration="358000" />
       <workItem from="1693297189742" duration="4616000" />
       <workItem from="1693357695029" duration="108000" />
-      <workItem from="1693357872024" duration="1206000" />
+      <workItem from="1693357872024" duration="1504000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -90,14 +77,34 @@
       <option name="project" value="LOCAL" />
       <updated>1693185811514</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix 修复内部类调用不了外部keycloak seeion问题">
+      <option name="closed" value="true" />
+      <created>1693366708236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693366708236</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix 修复内部类调用不了外部keycloak seeion问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 修复内部类调用不了外部keycloak seeion问题" />
   </component>
 </project>
