@@ -1,31 +1,36 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package org.keycloak.social.wechat;
 
 import org.keycloak.broker.oidc.OAuth2IdentityProviderConfig;
 import org.keycloak.models.IdentityProviderModel;
 
 public class WechatWorkProviderConfig extends OAuth2IdentityProviderConfig {
+  private static final long serialVersionUID = 1L;
 
   public WechatWorkProviderConfig(IdentityProviderModel model) {
     super(model);
   }
 
   public WechatWorkProviderConfig() {
-    super();
   }
 
   public String getAgentId() {
-    return getConfig().get("agentId");
+    return (String)this.getConfig().get("agentId");
   }
 
   public void setAgentId(String agentId) {
-    getConfig().put("agentId", agentId);
+    this.getConfig().put("agentId", agentId);
   }
 
   public String getQrcodeAuthorizationUrl() {
-    return getConfig().get("qrcodeAuthorizationUrl");
+    return (String)this.getConfig().get("qrcodeAuthorizationUrl");
   }
 
   public void setQrcodeAuthorizationUrl(String qrcodeAuthorizationUrl) {
-    getConfig().put("qrcodeAuthorizationUrl", qrcodeAuthorizationUrl);
+    this.getConfig().put("qrcodeAuthorizationUrl", qrcodeAuthorizationUrl);
   }
 }
