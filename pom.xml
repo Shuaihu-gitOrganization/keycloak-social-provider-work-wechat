@@ -6,7 +6,7 @@
 		<version>24.0.3</version>
 	</parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>keycloak-services-social-wechat-work</artifactId>
+    <artifactId>keycloak-services-social-wechat-work-24.0.3</artifactId>
     <name>Keycloak Services Social Wechat Work</name>
 	<packaging>jar</packaging>
 	<properties>
@@ -17,7 +17,7 @@
     </properties>
 
 	<build>
-		<finalName>keycloak-services-social-wechat-work</finalName>
+		<finalName>keycloak-services-social-wechat-work-24.0.3</finalName>
 	</build>
 
     <dependencies>

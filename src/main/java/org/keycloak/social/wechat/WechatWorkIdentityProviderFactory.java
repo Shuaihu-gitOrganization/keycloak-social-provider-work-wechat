@@ -19,19 +19,23 @@ public class WechatWorkIdentityProviderFactory extends AbstractIdentityProviderF
     public WechatWorkIdentityProviderFactory() {
     }
 
+    @Override
     public String getName() {
         return "WechatWork";
     }
 
+    @Override
     public WechatWorkIdentityProvider create(KeycloakSession session, IdentityProviderModel model) {
         logger.info("create ---- session ----- > " + session);
         return new WechatWorkIdentityProvider(session, new WechatWorkProviderConfig(model));
     }
 
+    @Override
     public String getId() {
         return "wechat-work";
     }
 
+    @Override
     public WechatWorkProviderConfig createConfig() {
         return new WechatWorkProviderConfig();
     }

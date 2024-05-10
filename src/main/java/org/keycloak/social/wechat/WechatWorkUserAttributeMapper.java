@@ -1,8 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package org.keycloak.social.wechat;
 
 import org.keycloak.broker.oidc.mappers.AbstractJsonUserAttributeMapper;
@@ -18,14 +13,17 @@ public class WechatWorkUserAttributeMapper extends AbstractJsonUserAttributeMapp
   public WechatWorkUserAttributeMapper() {
   }
 
+  @Override
   public String[] getCompatibleProviders() {
     return cp;
   }
 
+  @Override
   public String getId() {
     return "wechat-work-user-attribute-mapper";
   }
 
+  @Override
   public void updateBrokeredUser(KeycloakSession session, RealmModel realm, UserModel user, IdentityProviderMapperModel mapperModel, BrokeredIdentityContext context) {
     user.setSingleAttribute("idp_type", context.getUserAttribute("idp_type"));
     user.setSingleAttribute("name", context.getUserAttribute("name"));

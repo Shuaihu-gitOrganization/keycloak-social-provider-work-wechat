@@ -1,7 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
 
 package org.keycloak.social.wechat;
 
@@ -9,11 +5,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import java.net.URI;
-import java.util.Iterator;
-import java.util.concurrent.TimeUnit;
-
-
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.WebApplicationException;
@@ -34,6 +25,10 @@ import org.keycloak.models.RealmModel;
 import org.keycloak.models.UserModel;
 import org.keycloak.services.ErrorPage;
 import org.keycloak.sessions.AuthenticationSessionModel;
+
+import java.net.URI;
+import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
 public class WechatWorkIdentityProvider extends AbstractOAuth2IdentityProvider<WechatWorkProviderConfig> implements SocialIdentityProvider<WechatWorkProviderConfig> {
   public static final String AUTH_URL = "https://open.weixin.qq.com/connect/oauth2/authorize";
@@ -325,10 +320,10 @@ public class WechatWorkIdentityProvider extends AbstractOAuth2IdentityProvider<W
     logger.info("createAuthorizationUrl User-Agent =" + ua);
     UriBuilder uriBuilder;
     if (ua != null && ua.indexOf("wxwork") > 0) {
-      logger.info("Start creating connection 1 ----- > {}" + ((WechatWorkProviderConfig)this.getConfig()).getAuthorizationUrl());
-      uriBuilder = UriBuilder.fromUri(((WechatWorkProviderConfig)this.getConfig()).getAuthorizationUrl());
+      logger.info("Start creating connection 1 ----- > {}" + this.getConfig().getAuthorizationUrl());
+      uriBuilder = UriBuilder.fromUri(this.getConfig().getAuthorizationUrl());
       logger.info("Connection creation complete 2 ----- > {}" + uriBuilder);
-      uriBuilder.queryParam("appid", new Object[]{((WechatWorkProviderConfig)this.getConfig()).getClientId()}).queryParam("redirect_uri", new Object[]{request.getRedirectUri()}).queryParam("state", new Object[]{request.getState().getEncoded()}).queryParam("response_type", new Object[]{"code"}).queryParam("scope", new Object[]{"snsapi_base"});
+      uriBuilder.queryParam("appid", new Object[]{this.getConfig().getClientId()}).queryParam("redirect_uri", new Object[]{request.getRedirectUri()}).queryParam("state", new Object[]{request.getState().getEncoded()}).queryParam("response_type", new Object[]{"code"}).queryParam("scope", new Object[]{"snsapi_base"});
       uriBuilder.fragment("wechat_redirect");
       logger.info("创建连接1 ----- 》 {}" + uriBuilder);
     } else {
