@@ -219,6 +219,7 @@ public class WechatWorkIdentityProvider
    * @param authorizationCode 授权代码
    * @return {@link BrokeredIdentityContext}
    */
+  @Override
   public BrokeredIdentityContext getFederatedIdentity(String authorizationCode) {
     String accessToken = getAccessToken();
     if (accessToken == null) {
