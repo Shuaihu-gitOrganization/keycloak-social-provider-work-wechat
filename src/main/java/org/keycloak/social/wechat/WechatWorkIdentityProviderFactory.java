@@ -16,16 +16,22 @@
  */
 package org.keycloak.social.wechat;
 
+import org.jboss.logging.Logger;
 import org.keycloak.broker.provider.AbstractIdentityProviderFactory;
 import org.keycloak.broker.social.SocialIdentityProviderFactory;
 import org.keycloak.models.IdentityProviderModel;
 import org.keycloak.models.KeycloakSession;
 
+/**
+ * @author shuaihu.zhang
+ */
 public class WechatWorkIdentityProviderFactory
     extends AbstractIdentityProviderFactory<WechatWorkIdentityProvider>
     implements SocialIdentityProviderFactory<WechatWorkIdentityProvider> {
-
+  private static final Logger log = Logger.getLogger(WechatWorkIdentityProviderFactory.class);
   public static final String PROVIDER_ID = "wechat-work";
+  public static final String DEFAULT_SCOPE = "user:email";
+
 
   @Override
   public String getName() {
@@ -34,11 +40,13 @@ public class WechatWorkIdentityProviderFactory
 
   @Override
   public WechatWorkIdentityProvider create(KeycloakSession session, IdentityProviderModel model) {
+    log.info("create wechat work identity provider session: "+session+" model:"+model);
     return new WechatWorkIdentityProvider(session, new WechatWorkProviderConfig(model));
   }
 
   @Override
   public IdentityProviderModel createConfig() {
+    log.info("createConfig");
     return new WechatWorkProviderConfig();
   }
 

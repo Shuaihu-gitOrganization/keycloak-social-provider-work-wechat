@@ -9,14 +9,15 @@ import org.keycloak.models.UserModel;
 
 /** User attribute mapper. */
 public class WechatWorkUserAttributeMapper extends AbstractJsonUserAttributeMapper {
-  private static final String PROFILE_MOBILE = WechatWorkIdentityProvider.PROFILE_MOBILE;
-  private static final String PROFILE_GENDER = WechatWorkIdentityProvider.PROFILE_GENDER;
-  private static final String PROFILE_STATUS = WechatWorkIdentityProvider.PROFILE_STATUS;
-  private static final String PROFILE_ENABLE = WechatWorkIdentityProvider.PROFILE_ENABLE;
+  private static final String PROFILE_MOBILE = WechatWorkIdentityProviderV2.PROFILE_MOBILE;
+  private static final String PROFILE_GENDER = WechatWorkIdentityProviderV2.PROFILE_GENDER;
+  private static final String PROFILE_STATUS = WechatWorkIdentityProviderV2.PROFILE_STATUS;
+  private static final String PROFILE_ENABLE = WechatWorkIdentityProviderV2.PROFILE_ENABLE;
   private static final String[] cp = new String[] {WechatWorkIdentityProviderFactory.PROVIDER_ID};
 
   @Override
   public String[] getCompatibleProviders() {
+    logger.info("wechat-work-user-attribute-mapper"+cp);
     return cp;
   }
 

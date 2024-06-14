@@ -3,76 +3,30 @@
 	<parent>
 		<groupId>org.keycloak</groupId>
 		<artifactId>keycloak-parent</artifactId>
-		<version>21.1.2</version>
+		<version>24.0.3</version>
 	</parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>keycloak-services-social-wechat-work</artifactId>
     <name>Keycloak Services Social Wechat Work</name>
 	<packaging>jar</packaging>
 	<properties>
-        <maven.compiler.target>11</maven.compiler.target>
-        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
     </properties>
 
 	<build>
 		<finalName>keycloak-services-social-wechat-work</finalName>
-		<plugins>
-			<plugin>
-				<groupId>com.coveo</groupId>
-				<artifactId>fmt-maven-plugin</artifactId>
-				<version>2.11</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>format</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<artifactId>maven-assembly-plugin</artifactId>
-					<configuration>
-						<descriptorRefs>
-							<descriptorRef>jar-with-dependencies</descriptorRef>
-						</descriptorRefs>
-						<archive>
-							<manifest>
-								<mainClass/>
-							</manifest>
-						</archive>
-					</configuration>
-					<executions>
-						<execution>
-							<id>make-assembly</id>
-							<phase>package</phase>
-							<goals>
-								<goal>single</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<configuration>
-						<source>11</source>
-						<target>11</target>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.wildfly.plugins</groupId>
-					<artifactId>wildfly-maven-plugin</artifactId>
-					<configuration>
-						<skip>false</skip>
-					</configuration>
-				</plugin>
-
-			</plugins>
-		</pluginManagement>
-	</build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
 		<dependency>
@@ -98,14 +52,20 @@
 		<dependency>
 			<groupId>org.infinispan</groupId>
 			<artifactId>infinispan-core</artifactId>
-			<version>14.0.9.Final</version>
+			<version>15.0.3.Final</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.infinispan</groupId>
 			<artifactId>infinispan-commons</artifactId>
-			<version>14.0.9.Final</version>
+			<version>15.0.0.Final</version>
 			<scope>provided</scope>
 		</dependency>
   </dependencies>
+	<repositories>
+		<repository>
+			<id>maven-central</id>
+			<url>https://repo.maven.apache.org/maven2/</url>
+		</repository>
+	</repositories>
 </project>
