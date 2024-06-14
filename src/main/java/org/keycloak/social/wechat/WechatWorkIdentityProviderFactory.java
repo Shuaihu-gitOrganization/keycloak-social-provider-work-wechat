@@ -30,7 +30,6 @@ public class WechatWorkIdentityProviderFactory
     implements SocialIdentityProviderFactory<WechatWorkIdentityProvider> {
   private static final Logger log = Logger.getLogger(WechatWorkIdentityProviderFactory.class);
   public static final String PROVIDER_ID = "wechat-work";
-  public static final String DEFAULT_SCOPE = "user:email";
 
 
   @Override
