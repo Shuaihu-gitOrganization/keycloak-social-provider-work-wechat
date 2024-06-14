@@ -55,6 +55,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author shuaihu.zhang
+ */
 public class WechatWorkIdentityProvider extends AbstractOAuth2IdentityProvider<WechatWorkProviderConfig> implements SocialIdentityProvider<WechatWorkProviderConfig> {
     public static final String AUTH_URL = "https://open.weixin.qq.com/connect/oauth2/authorize";
     public static final String QRCODE_AUTH_URL = "https://open.work.weixin.qq.com/wwopen/sso/qrConnect";
@@ -93,9 +96,9 @@ public class WechatWorkIdentityProvider extends AbstractOAuth2IdentityProvider<W
     public static final String PROFILE_IDP_TYPE = "idp_type";
     public static final String IDP_TYPE = "wechat-work";
     public static final String ATTRIBUTE_PREFIX = "wechat_work_";
-    private String ACCESS_TOKEN_KEY = "access_token";
-    private String ACCESS_TOKEN_CACHE_KEY = "wechat_work_sso_access_token";
-    public static String WECHAT_WORK_CACHE_NAME = "wechat_work_sso";
+    private static final String ACCESS_TOKEN_KEY = "access_token";
+    private static final String ACCESS_TOKEN_CACHE_KEY = "wechat_work_sso_access_token";
+    public static final String WECHAT_WORK_CACHE_NAME = "wechat_work_sso";
     public static Cache<String, String> sso_cache;
     public WechatWorkIdentityProvider(KeycloakSession session, WechatWorkProviderConfig config) {
         super(session, config);
