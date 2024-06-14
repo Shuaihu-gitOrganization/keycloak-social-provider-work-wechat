@@ -40,13 +40,11 @@ public class WechatWorkIdentityProviderFactory
 
   @Override
   public WechatWorkIdentityProvider create(KeycloakSession session, IdentityProviderModel model) {
-    log.info("create wechat work identity provider session: "+session+" model:"+model);
     return new WechatWorkIdentityProvider(session, new WechatWorkProviderConfig(model));
   }
 
   @Override
   public IdentityProviderModel createConfig() {
-    log.info("createConfig");
     return new WechatWorkProviderConfig();
   }
 
